@@ -16,15 +16,6 @@ const client = new Client({
     ]
 })
 
-client.once('ready', function () {
-    console.log('Bot logado!')
-})
 
-client.on('messageCreate', function (msg) {
-    if (msg.content === "oi") {
-        msg.reply(`Oi tudo bem ${msg.author.username}`)
-    }
-
-})
 
 client.login(process.env.BOT_TOKEN)
